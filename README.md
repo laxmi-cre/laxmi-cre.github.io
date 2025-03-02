@@ -176,6 +176,41 @@
     <footer>
         <p>© 2023 Saadhbahadhur Bungur Pig Farm. All rights reserved.</p>
         <p>Contact: +91-XXXXXXX | Email: info@saadhbahadhurpigfarm.com</p>
-    </footer>
+    </footer><!-- Add this in head section -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Farm",
+  "name": "Saadhbahadhur Bungur Pig Farm",
+  "image": "your-logo.jpg",
+  "@id": "",
+  "url": "your-website-url.com",
+  "telephone": "+91-XXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Your Address",
+    "addressLocality": "Your City",
+    "postalCode": "XXXXXX",
+    "addressCountry": "India"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7128,
+    "longitude": -74.0060
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
+</script>
 </body>
 </html>
