@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -175,7 +175,7 @@
 
     <footer>
         <p>© 2023 Saadhbahadhur Bungur Pig Farm. All rights reserved.</p>
-        <p>Contact: +91-XXXXXXX | Email: info@saadhbahadhurpigfarm.com</p>
+        <p>Contact: +9840074818 | Email: saadhbahadhurpigfarm16@gmail.com</p>
     </footer><!-- Add this in head section -->
 <script type="application/ld+json">
 {
@@ -184,14 +184,14 @@
   "name": "Saadhbahadhur Bungur Pig Farm",
   "image": "your-logo.jpg",
   "@id": "",
-  "url": "your-website-url.com",
-  "telephone": "+91-XXXXXXX",
+  "url": "sadhbahadhur.com",
+  "telephone": "+9840074818",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Your Address",
-    "addressLocality": "Your City",
-    "postalCode": "XXXXXX",
-    "addressCountry": "India"
+    "streetAddress": "Manthali-3, Ramechhap",
+    "addressLocality": "Manthali",
+    "postalCode": "05400",
+    "addressCountry": "Nepal"
   },
   "geo": {
     "@type": "GeoCoordinates",
