@@ -1,10 +1,10 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saadhbahadhur Bungur Premium Pig Farm</title>
-    <meta name="description" content="Premium quality pig breeding and farming services. Saadhbahadhur Bungur offers healthy, well-bred pigs with complete documentation and certification.">
+    <title>Saadh Bahadhur Bungur Premium Pig Farm</title>
+    <meta name="description" content="India's finest pig breeding farm - Healthy pigs, certified breeding, and premium pork products">
     <style>
         * {
             margin: 0;
@@ -13,204 +13,166 @@
             font-family: 'Arial', sans-serif;
         }
 
+        :root {
+            --main-pink: #FFB6C1;
+            --farm-green: #228B22;
+            --brown-accent: #8B4513;
+        }
+
         body {
-            background-color: #f5f5f5;
-            line-height: 1.6;
+            background: #fff5f5;
         }
 
         .header {
-            background-color: #8B4513;
-            color: black;
+            background: var(--brown-accent);
             padding: 1rem;
             text-align: center;
-        }
-
-        .nav {
-            background-color: #A0522D;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .nav a {
             color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
         }
 
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1587923623987-c7e4083beb23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            height: 60vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
+            height: 70vh;
+            background: linear-gradient(to bottom right, var(--main-pink), #ffffff);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 4rem;
             text-align: center;
+        }
+
+        .farm-logo {
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        .pig-family {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 300px;
+            background: url('https://i.ibb.co/4Yv0hq3/pig-family.png') center bottom/contain no-repeat;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .products {
+            padding: 4rem 2rem;
+            background: var(--farm-green);
+            color: white;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
             padding: 2rem;
         }
 
-        .pig-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .pig-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .pig-info {
-            padding: 1rem;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-        }
-
         footer {
-            background: #8B4513;
+            background: var(--brown-accent);
             color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        .section {
             padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            text-align: center;
         }
 
-        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-        h2 { color: #8B4513; margin: 2rem 0; text-align: center; }
-        .highlight { color: #8B4513; font-weight: bold; }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--brown-accent);
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: var(--farm-green);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2rem 0;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Saadhbahadhur Bungur Pig Farm</h1>
-        <p>Premium Quality Pig Breeding Since 1995</p>
+        <h1>Saadh Bahadhur Bungur Pig Farm</h1>
+        <p>Established 1995 • Trusted by 1000+ Farmers</p>
     </header>
 
-    <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#pigs">Available Pigs</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <section class="hero">
-        <div>
-            <h2>Healthy • Well-Bred • Certified</h2>
-            <p>Get premium quality pigs with complete health certification</p>
+        <div class="hero-content">
+            <img src="farm-logo.png" alt="Farm Logo" class="farm-logo">
+            <h2>Premium Quality Pigs & Pork Products</h2>
+            <p>Certified Organic Breeding • Disease-Free Guarantee</p>
+            <a href="#contact" class="cta-button">Schedule Farm Visit</a>
+        </div>
+        <div class="pig-family"></div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🐷 100% Healthy Pigs</h3>
+            <p>Regular veterinary checkups and vaccination programs</p>
+        </div>
+        <div class="feature-card">
+            <h3>🌱 Organic Feed</h3>
+            <p>Chemical-free natural feeding regimen</p>
+        </div>
+        <div class="feature-card">
+            <h3>🏆 Certified Breeders</h3>
+            <p>Government-approved breeding certification</p>
         </div>
     </section>
 
-    <main class="section">
-        <section id="about">
-            <h2>About Our Farm</h2>
-            <p>At <span class="highlight">Saadhbahadhur Bungur</span>, we specialize in breeding high-quality pigs with:</p>
-            <ul>
-                <li>✔️ Full veterinary certification</li>
-                <li>✔️ Organic feeding program</li>
-                <li>✔️ 24/7 professional care</li>
-                <li>✔️ GPS-tracked health monitoring</li>
-            </ul>
-        </section>
-
-        <section id="pigs">
-            <h2>Available Pigs</h2>
-            <div class="gallery">
-                <!-- Repeat this card for each pig -->
-                <div class="pig-card">
-                    <img src="pig1.jpg" alt="Premium Yorkshire Boar - 6 months old">
-                    <div class="pig-info">
-                        <h3>Yorkshire Boar</h3>
-                        <p>Age: 6 months</p>
-                        <p>Weight: 120 kg</p>
-                        <p>Vaccination: Complete</p>
-                    </div>
-                </div>
-                <!-- Add more pig cards here -->
+    <section class="products">
+        <h2>Our Offerings</h2>
+        <div class="gallery">
+            <div class="product-card">
+                <h3>Breeding Pigs</h3>
+                <p>High-quality breeding stock</p>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
-                <form>
-                    <div>
-                        <label>Name:</label>
-                        <input type="text" required>
-                    </div>
-                    <div>
-                        <label>Email:</label>
-                        <input type="email" required>
-                    </div>
-                    <div>
-                        <label>Message:</label>
-                        <textarea rows="4" required></textarea>
-                    </div>
-                    <button type="submit" style="background: #8B4513; color: white; padding: 10px 20px; border: none; margin-top: 1rem;">Send Inquiry</button>
-                </form>
+            <div class="product-card">
+                <h3>Pork Products</h3>
+                <p>Fresh & processed pork</p>
             </div>
-        </section>
-    </main>
+            <div class="product-card">
+                <h3>Farm Consultancy</h3>
+                <p>Expert pig farming guidance</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 4rem 2rem;">
+        <h2>Contact Us</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <p>📞 +9840074818</p>
+            <p>📧 saadbahadhurbungurfarm.com</p>
+            <p>📍 Manthali-1, Ramechhap, Nepali</p>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2023 Saadhbahadhur Bungur Pig Farm. All rights reserved.</p>
-        <p>Contact: +9840074818 | Email: saadhbahadhurpigfarm16@gmail.com</p>
-    </footer><!-- Add this in head section -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Farm",
-  "name": "Saadhbahadhur Bungur Pig Farm",
-  "image": "your-logo.jpg",
-  "@id": "",
-  "url": "sadhbahadhur.com",
-  "telephone": "+9840074818",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Manthali-3, Ramechhap",
-    "addressLocality": "Manthali",
-    "postalCode": "05400",
-    "addressCountry": "Nepal"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 40.7128,
-    "longitude": -74.0060
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "18:00"
-  }
-}
-</script>
+        <p>© 2023 Saadh Bahadhur Bungur Pig Farm</p>
+        <p>Certified by Indian Livestock Development Board</p>
+    </footer>
 </body>
 </html>
+
+            
