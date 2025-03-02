@@ -54,7 +54,7 @@
             bottom: 0;
             width: 100%;
             height: 300px;
-            background: url('https://i.ibb.co/4Yv0hq3/pig-family.png') center bottom/contain no-repeat;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPDMf3Kd_rVzJRoOaooXU-e7IGo5enMopUUvhawMs5Wde8XFKIK-B6O28p8zae4NYA-0&usqp=CAU') center bottom/contain no-repeat;
         }
 
         .features {
